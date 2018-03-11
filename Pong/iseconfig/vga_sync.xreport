@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2018-03-06T15:33:01</DateModified>
+  <DateModified>2018-03-07T16:12:21</DateModified>
   <ModuleName>vga_sync</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Rosswell/Documents/Pong/Pong/iseconfig/vga_sync.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Rosswell/Documents/Pong/Pong</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Rosswell/Documents/Pong/Pong\</ImplementationReportsDirectory>
   <DateInitialized>2018-03-06T15:33:01</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

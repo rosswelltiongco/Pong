@@ -41,6 +41,23 @@ module vga_sync(clk, rst, hsync, vsync, video_on, p_tick);
    //status signal
    wire h_end, v_end, pixel_tick;
    
+   //=============Generating Tick====================
+    //count
+    wire m_tick;
+    reg [19:0] count;
+    // if hit 999999, reset 0
+    assign m_tick = (count == 999999) ? 1'b1: 1'b0;
+    
+      always @ (posedge clk, posedge rst)
+         if (rst)
+            count <= 20'b0;
+            else if (m_tick)
+               count <= 20'b0;
+               else 
+                  count <= count + 20'b1;
+   // ================================================
+   
+   
    //body
    //registers
    always @ (posedge clk, posedge rst)
@@ -63,7 +80,7 @@ module vga_sync(clk, rst, hsync, vsync, video_on, p_tick);
    
    //mod-2 cirucit to generate 25 MHz enable tick
    assign mod2_next = ~mod2_reg;
-   assign pixel_tick = mod2_reg;
+   //assign pixel_tick = mod2_reg; //modified
    
    //status signal
    //end of horizontal counter (799)
@@ -73,7 +90,7 @@ module vga_sync(clk, rst, hsync, vsync, video_on, p_tick);
    
    //next state logic of mod-800 horizontal sync counter
    always @ (*)
-      if (pixel_tick) //25 MHz pulse
+      if (m_tick) //25 MHz pulse
          if (h_end)
             h_count_next = 0;
          else
@@ -83,7 +100,7 @@ module vga_sync(clk, rst, hsync, vsync, video_on, p_tick);
          
    //next state logic of mod-525 vertical sync counter
    always @ (*)
-      if (pixel_tick & h_end)
+      if (m_tick& h_end)
          if (v_end)
             v_count_next = 0;
          else
@@ -107,6 +124,6 @@ module vga_sync(clk, rst, hsync, vsync, video_on, p_tick);
    assign vsync = v_sync_reg;
    assign pixel_x = h_count_reg;
    assign pixel_y = v_count_reg;
-   assign p_tick = pixel_tick;      
+   //assign p_tick = pixel_tick;      
       
 endmodule
