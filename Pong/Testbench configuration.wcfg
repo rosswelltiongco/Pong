@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Rosswell/Documents/Pong/Pong/vga_sync_tf_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="vga_sync_tf" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/vga_sync_tf/uut/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sync_tf/uut/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sync_tf/uut/pixel_tick" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pixel_tick</obj_property>
+      <obj_property name="ObjectShortName">pixel_tick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sync_tf/uut/hsync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hsync</obj_property>
+      <obj_property name="ObjectShortName">hsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sync_tf/uut/vsync" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vsync</obj_property>
+      <obj_property name="ObjectShortName">vsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sync_tf/uut/pixel_x" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pixel_x[9:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_x[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sync_tf/uut/pixel_y" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pixel_y[9:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_y[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sync_tf/uut/h_end" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">h_end</obj_property>
+      <obj_property name="ObjectShortName">h_end</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sync_tf/uut/v_end" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">v_end</obj_property>
+      <obj_property name="ObjectShortName">v_end</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sync_tf/uut/h_video_on" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">h_video_on</obj_property>
+      <obj_property name="ObjectShortName">h_video_on</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sync_tf/uut/v_video_on" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">v_video_on</obj_property>
+      <obj_property name="ObjectShortName">v_video_on</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sync_tf/uut/video_on" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">video_on[9:0]</obj_property>
+      <obj_property name="ObjectShortName">video_on[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sync_tf/uut/sw" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sw[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/vga_sync_tf/uut/vga_rgb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">vga_rgb[11:0]</obj_property>
+      <obj_property name="ObjectShortName">vga_rgb[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

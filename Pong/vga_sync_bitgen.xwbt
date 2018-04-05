@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Rosswell\Documents\Pong\Pong\vga_sync.ncd
+OUTFILE=C:\Users\Rosswell\Documents\Pong\Pong\vga_sync.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=C:\Users\Rosswell\Documents\Pong\Pong
+LICENSE=WebPack
+USER_INFO=211383700_0_0_936

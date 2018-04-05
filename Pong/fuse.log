@@ -1,0 +1,18 @@
+Running: C:\Xilinx_ISE_Design_Suite\14.7\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/Users/Rosswell/Documents/Pong/Pong/vga_sync_tf_isim_beh.exe -prj C:/Users/Rosswell/Documents/Pong/Pong/vga_sync_tf_beh.prj work.vga_sync_tf work.glbl 
+ISim P.20131013 (signature 0x8ef4fb42)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/Rosswell/Documents/Pong/Pong/vga_sync.v" into library work
+Analyzing Verilog file "C:/Users/Rosswell/Documents/Pong/Pong/vga_sync_tf.v" into library work
+Analyzing Verilog file "C:/Xilinx_ISE_Design_Suite/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 193028 KB
+Fuse CPU Usage: 342 ms
+Compiling module vga_sync
+Compiling module vga_sync_tf
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+ERROR:Simulator:861 - Failed to link the design
