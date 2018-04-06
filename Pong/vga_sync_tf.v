@@ -44,7 +44,6 @@ module vga_sync_tf;
 		clk = 0;
 		rst = 1;
       sw = 12'b1;
-		sw = 0;
 
 		// Wait 100 ns for global reset to finish
 		#100;

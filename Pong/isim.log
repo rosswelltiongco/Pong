@@ -11,8 +11,15 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
+# run all
+Stopped at time : 7638045 ns : File "C:/Users/Rosswell/Documents/Pong/Pong/vga_sync_tf.v" Line 41
 # restart
 # run all
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 53486285 ns : File "C:/Users/Rosswell/Documents/Pong/Pong/vga_sync.v" Line 98
+Stopped at time : 65896975 ns : File "C:/Users/Rosswell/Documents/Pong/Pong/vga_sync.v" Line 59
+# restart
+# run all
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+Stopped at time : 16527955 ns : File "C:/Users/Rosswell/Documents/Pong/Pong/vga_sync.v" Line 38
