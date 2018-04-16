@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Rosswell/Documents/Pong/Pong/pong_top_st.xst" -ofn "C:/Users/Rosswell/Documents/Pong/Pong/pong_top_st.syr" 
