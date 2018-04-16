@@ -1,5 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
 // File name: vga_sync.v
 // 
 // 
@@ -13,7 +13,7 @@
 // from the class
 //
 // Purpose: Passes switches to RGB and generates hsync/vsync
-//////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////
 module vga_sync(clk, rst, sw, hsync, vsync, vga_rgb);
    input clk, rst; 
    input [11:0] sw;
@@ -73,7 +73,7 @@ module vga_sync(clk, rst, sw, hsync, vsync, vga_rgb);
    assign h_count_next = (pixel_tick) ? (h_end) ? 10'b0: h_count_reg + 1'b1 : h_count_reg;
    //Vertical next state logic
    //Requirement 7; Vertical scan count updated at completion of horizontal scan
-   assign v_count_next = (pixel_tick & h_end) ? (v_end) ? 10'b0 : v_count_reg + 1  : v_count_reg;
+   assign v_count_next = (pixel_tick & h_end) ? (v_end) ? 10'b0 : v_count_reg + 1'b1  : v_count_reg;
    //horizontal and vertical sync, buffered to avoid glitch
    //Requirement 5: h_sync_next asserted between 656 and 751
    assign h_sync_next = (h_count_reg >= 656 && h_count_reg <= 751);
