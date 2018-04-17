@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\016091762\Downloads\Pong\Pong\Pong\pong_top.ncd
+OUTFILE=C:\Users\016091762\Downloads\Pong\Pong\Pong\pong_top.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=C:\Users\016091762\Downloads\Pong\Pong\Pong
+LICENSE=ISE
+USER_INFO=174166057_174166058_210551025_903
