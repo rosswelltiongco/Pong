@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.13 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.14 secs
+Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: pong_top.prj
 
@@ -105,11 +105,11 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\Rosswell\Documents\Pong\vga_sync.v" into library work
+Analyzing Verilog file "C:\Users\016091762\Downloads\Pong-master\Pong-master\vga_sync.v" into library work
 Parsing module <vga_sync>.
-Analyzing Verilog file "C:\Users\Rosswell\Documents\Pong\pong_graphics.v" into library work
+Analyzing Verilog file "C:\Users\016091762\Downloads\Pong-master\Pong-master\pong_graphics.v" into library work
 Parsing module <pong_graphics>.
-Analyzing Verilog file "C:\Users\Rosswell\Documents\Pong\pong_top_st.v" into library work
+Analyzing Verilog file "C:\Users\016091762\Downloads\Pong-master\Pong-master\pong_top_st.v" into library work
 Parsing module <pong_top>.
 
 =========================================================================
@@ -127,14 +127,14 @@ Elaborating module <pong_graphics>.
 =========================================================================
 
 Synthesizing Unit <pong_top>.
-    Related source file is "C:\Users\Rosswell\Documents\Pong\pong_top_st.v".
+    Related source file is "C:\Users\016091762\Downloads\Pong-master\Pong-master\pong_top_st.v".
     Found 12-bit register for signal <rgb>.
     Summary:
 	inferred  12 D-type flip-flop(s).
 Unit <pong_top> synthesized.
 
 Synthesizing Unit <vga_sync>.
-    Related source file is "C:\Users\Rosswell\Documents\Pong\vga_sync.v".
+    Related source file is "C:\Users\016091762\Downloads\Pong-master\Pong-master\vga_sync.v".
     Found 10-bit register for signal <pixel_y>.
     Found 10-bit register for signal <pixel_x>.
     Found 2-bit register for signal <count>.
@@ -157,17 +157,17 @@ Synthesizing Unit <vga_sync>.
 Unit <vga_sync> synthesized.
 
 Synthesizing Unit <pong_graphics>.
-    Related source file is "C:\Users\Rosswell\Documents\Pong\pong_graphics.v".
+    Related source file is "C:\Users\016091762\Downloads\Pong-master\Pong-master\pong_graphics.v".
     Found 10-bit comparator lessequal for signal <n0000> created at line 30
     Found 10-bit comparator lessequal for signal <n0002> created at line 30
-    Found 10-bit comparator lessequal for signal <n0005> created at line 34
-    Found 10-bit comparator lessequal for signal <n0007> created at line 34
-    Found 10-bit comparator lessequal for signal <n0010> created at line 35
-    Found 10-bit comparator lessequal for signal <n0013> created at line 35
-    Found 10-bit comparator lessequal for signal <n0017> created at line 39
-    Found 10-bit comparator lessequal for signal <n0019> created at line 39
-    Found 10-bit comparator lessequal for signal <n0022> created at line 40
-    Found 10-bit comparator lessequal for signal <n0025> created at line 40
+    Found 10-bit comparator lessequal for signal <n0006> created at line 34
+    Found 10-bit comparator lessequal for signal <n0008> created at line 34
+    Found 10-bit comparator lessequal for signal <n0011> created at line 35
+    Found 10-bit comparator lessequal for signal <n0014> created at line 35
+    Found 10-bit comparator lessequal for signal <n0018> created at line 39
+    Found 10-bit comparator lessequal for signal <n0020> created at line 39
+    Found 10-bit comparator lessequal for signal <n0023> created at line 40
+    Found 10-bit comparator lessequal for signal <n0026> created at line 40
     Summary:
 	inferred  10 Comparator(s).
 	inferred   3 Multiplexer(s).
@@ -224,11 +224,10 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <rgb_reg_4> (without init value) has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rgb_reg_7> (without init value) has a constant value of 0 in block <pong_top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <rgb_reg_4> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <rgb_reg_7> 
 INFO:Xst:2261 - The FF/Latch <rgb_reg_5> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <rgb_reg_6> 
-INFO:Xst:2261 - The FF/Latch <rgb_reg_3> in Unit <pong_top> is equivalent to the following FF/Latch, which will be removed : <rgb_reg_11> 
-INFO:Xst:2261 - The FF/Latch <rgb_reg_0> in Unit <pong_top> is equivalent to the following 5 FFs/Latches, which will be removed : <rgb_reg_1> <rgb_reg_2> <rgb_reg_8> <rgb_reg_9> <rgb_reg_10> 
+INFO:Xst:2261 - The FF/Latch <rgb_reg_8> in Unit <pong_top> is equivalent to the following 2 FFs/Latches, which will be removed : <rgb_reg_9> <rgb_reg_10> 
+INFO:Xst:2261 - The FF/Latch <rgb_reg_0> in Unit <pong_top> is equivalent to the following 2 FFs/Latches, which will be removed : <rgb_reg_1> <rgb_reg_2> 
 
 Optimizing unit <pong_top> ...
 
@@ -244,8 +243,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 27
- Flip-Flops                                            : 27
+# Registers                                            : 30
+ Flip-Flops                                            : 30
 
 =========================================================================
 
@@ -268,21 +267,21 @@ Top Level Output File Name         : pong_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 90
+# BELS                             : 96
 #      GND                         : 1
 #      INV                         : 3
 #      LUT1                        : 2
-#      LUT2                        : 7
-#      LUT3                        : 1
-#      LUT4                        : 5
-#      LUT5                        : 3
-#      LUT6                        : 30
+#      LUT2                        : 8
+#      LUT3                        : 7
+#      LUT4                        : 4
+#      LUT5                        : 4
+#      LUT6                        : 29
 #      MUXCY                       : 18
 #      XORCY                       : 20
-# FlipFlops/Latches                : 27
+# FlipFlops/Latches                : 30
 #      FDC                         : 4
 #      FDCE                        : 20
-#      FDE                         : 3
+#      FDE                         : 6
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 15
@@ -296,15 +295,15 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              27  out of  126800     0%  
- Number of Slice LUTs:                   51  out of  63400     0%  
-    Number used as Logic:                51  out of  63400     0%  
+ Number of Slice Registers:              30  out of  126800     0%  
+ Number of Slice LUTs:                   57  out of  63400     0%  
+    Number used as Logic:                57  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     51
-   Number with an unused Flip Flop:      24  out of     51    47%  
-   Number with an unused LUT:             0  out of     51     0%  
-   Number of fully used LUT-FF pairs:    27  out of     51    52%  
+ Number of LUT Flip Flop pairs used:     57
+   Number with an unused Flip Flop:      27  out of     57    47%  
+   Number with an unused LUT:             0  out of     57     0%  
+   Number of fully used LUT-FF pairs:    30  out of     57    52%  
    Number of unique control sets:         4
 
 IO Utilization: 
@@ -335,7 +334,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 27    |
+clk                                | BUFGP                  | 30    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -358,7 +357,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 2.503ns (frequency: 399.489MHz)
-  Total number of paths / destination ports: 1479 / 50
+  Total number of paths / destination ports: 1655 / 56
 -------------------------------------------------------------------------
 Delay:               2.503ns (Levels of Logic = 12)
   Source:            vsync_unit/pixel_x_1 (FF)
@@ -371,7 +370,7 @@ Delay:               2.503ns (Levels of Logic = 12)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDCE:C->Q             2   0.361   0.688  vsync_unit/pixel_x_1 (vsync_unit/pixel_x_1)
-     LUT5:I0->O           12   0.097   0.346  vsync_unit/h_end<9>_SW0 (N4)
+     LUT5:I0->O           12   0.097   0.346  vsync_unit/h_end<9>_SW0 (N8)
      LUT6:I5->O            1   0.097   0.000  vsync_unit/Mcount_pixel_x_lut<0> (vsync_unit/Mcount_pixel_x_lut<0>)
      MUXCY:S->O            1   0.353   0.000  vsync_unit/Mcount_pixel_x_cy<0> (vsync_unit/Mcount_pixel_x_cy<0>)
      MUXCY:CI->O           1   0.023   0.000  vsync_unit/Mcount_pixel_x_cy<1> (vsync_unit/Mcount_pixel_x_cy<1>)
@@ -409,7 +408,7 @@ Offset:              0.732ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 12 / 12
+  Total number of paths / destination ports: 14 / 14
 -------------------------------------------------------------------------
 Offset:              1.033ns (Levels of Logic = 2)
   Source:            vsync_unit/h_sync_reg (FF)
@@ -443,14 +442,14 @@ clk            |    2.503|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 11.00 secs
-Total CPU time to Xst completion: 11.20 secs
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.22 secs
  
 --> 
 
-Total memory usage is 515536 kilobytes
+Total memory usage is 413272 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
 

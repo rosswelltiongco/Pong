@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/Rosswell/Documents/Pong/Pong/vga_sync_tf_isim_beh.exe" -prj "C:/Users/Rosswell/Documents/Pong/Pong/vga_sync_tf_beh.prj" "work.vga_sync_tf" "work.glbl" 
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/016091762/Downloads/Pong-master/Pong-master/pong_top_tf_isim_beh.exe" -prj "C:/Users/016091762/Downloads/Pong-master/Pong-master/pong_top_tf_beh.prj" "work.pong_top_tf" "work.glbl" 

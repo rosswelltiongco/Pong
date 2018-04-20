@@ -21,19 +21,19 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Rosswell/Documents/Pong/pong_graphics.v";
+static const char *ng0 = "C:/Users/016091762/Downloads/Pong-master/Pong-master/pong_graphics.v";
 static int ng1[] = {32, 0};
 static int ng2[] = {35, 0};
-static unsigned int ng3[] = {112U, 0U};
+static unsigned int ng3[] = {96U, 0U};
 static int ng4[] = {600, 0};
 static int ng5[] = {603, 0};
 static int ng6[] = {204, 0};
-static int ng7[] = {276, 0};
-static unsigned int ng8[] = {1904U, 0U};
+static int ng7[] = {275, 0};
+static unsigned int ng8[] = {4080U, 0U};
 static int ng9[] = {580, 0};
-static int ng10[] = {588, 0};
+static int ng10[] = {587, 0};
 static int ng11[] = {238, 0};
-static int ng12[] = {246, 0};
+static int ng12[] = {245, 0};
 static unsigned int ng13[] = {3855U, 0U};
 static unsigned int ng14[] = {0U, 0U};
 static unsigned int ng15[] = {2056U, 0U};
@@ -1843,9 +1843,9 @@ LAB20:    xsi_set_current_line(49, ng0);
 }
 
 
-extern void work_m_00000000003106507118_2659688482_init()
+extern void work_m_00000000000671660434_2659688482_init()
 {
 	static char *pe[] = {(void *)Cont_30_0,(void *)Cont_31_1,(void *)Cont_34_2,(void *)Cont_36_3,(void *)Cont_39_4,(void *)Cont_41_5,(void *)Always_45_6};
-	xsi_register_didat("work_m_00000000003106507118_2659688482", "isim/pong_top_tf_isim_beh.exe.sim/work/m_00000000003106507118_2659688482.didat");
+	xsi_register_didat("work_m_00000000000671660434_2659688482", "isim/pong_top_tf_isim_beh.exe.sim/work/m_00000000000671660434_2659688482.didat");
 	xsi_register_executes(pe);
 }

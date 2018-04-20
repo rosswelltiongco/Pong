@@ -22,7 +22,7 @@ module pong_graphics(video_on, pixel_x, pixel_y, graphics_rgb);
 
     //Ojbect output signals
     wire        wall_on , paddle_on , ball_on;
-    wire [11:0] wall_rgb, paddle_rgb, ball_on_rgb;
+    wire [11:0] wall_rgb, paddle_rgb, ball_rgb;
     
     
     //Boundary declarations
@@ -33,12 +33,12 @@ module pong_graphics(video_on, pixel_x, pixel_y, graphics_rgb);
     //Paddle Pixel & Green RGB
     assign paddle_on  = (600 <= pixel_x) && (pixel_x <= 603) &&
                         (204 <= pixel_y) && (pixel_y <= 275);
-    assign paddle_rgb = 12'h060;
+    assign paddle_rgb = 12'hFF0;
     
     //Square ball Pixel & Red RGB
     assign ball_on     = (580 <= pixel_x) && (pixel_x <= 587) && 
                          (238 <= pixel_y) && (pixel_y <= 245);
-    assign ball_on_rgb = 12'hF0F;
+    assign ball_rgb = 12'hF0F;
     
     
     //RGB Multiplexing circuit
@@ -46,7 +46,7 @@ module pong_graphics(video_on, pixel_x, pixel_y, graphics_rgb);
         if (~video_on)  graphics_rgb = 12'h000;     else
         if (wall_on)    graphics_rgb = wall_rgb;    else
         if (paddle_on)  graphics_rgb = paddle_rgb;  else
-        if (ball_on)    graphics_rgb = ball_on_rgb;
+        if (ball_on)    graphics_rgb = ball_rgb;
         else            graphics_rgb = 12'h808; //Purple background
     
 

@@ -40,27 +40,33 @@ module pong_top_tf;
 
     //Wall Declaration 
     wire wall_on  = (32 <= uut.pixel_x) && (uut.pixel_x <= 35);
-    localparam wall_rgb = 12'h070;
+    localparam wall_rgb = 12'h060;;
     wire paddle_on  = (600 <= uut.pixel_x) && (uut.pixel_x <= 603) &&
                             (204 <= uut.pixel_y) && (uut.pixel_y <= 276);
-    localparam paddle_rgb = 12'h770;
+    localparam paddle_rgb = 12'hFF0;
     wire ball_on     = (580 <= uut.pixel_x) && (uut.pixel_x <= 588) && 
                          (238 <= uut.pixel_y) && (uut.pixel_y <= 246);
-    localparam ball_on_rgb = 12'hF0F;
+    localparam ball_rgb = 12'hF0F;
     
     // Fixed Object Requirement 3: Wall occupies horizontal scan 32-35
-    always @ (posedge clk) begin
-        #2 if (wall_on)    $display ("wall in range");
+    always @ (posedge uut.pixel_tick) begin
+        #2 if (wall_on)    
+	         $display ("Wall found when pixel_x count is %d with RGB: 12'h%h",
+				uut.pixel_x, wall_rgb);
     end
     
     // Fixed Object Requirement 4: Paddle occupies horizontal scan 600-603 & vertical scan 204-276
-    always @ (posedge clk) begin
-        #2 if (paddle_on)  $display ("paddle in range");
+    always @ (posedge uut.pixel_tick) begin
+        #2 if (paddle_on)
+	         $display ("Paddle found when pixel_x,pixel_y count is (%d,%d) with RGB: 12'h%h",
+				uut.pixel_x, uut.pixel_y, paddle_rgb);
     end
     
     // Fixed Object Requirement 5: Ball occupies horizontal scan 580-588 & vertical scan 238-246
-    always @ (posedge clk) begin
-        #2 if (ball_on)    $display ("ball in range");
+    always @ (posedge uut.pixel_tick) begin
+        #2 if (ball_on)
+	         $display ("Ball found when pixel_x,pixel_y count is (%d,%d) with RGB: 12'h%h",
+				uut.pixel_x, uut.pixel_y, ball_rgb);
     end
     
     
