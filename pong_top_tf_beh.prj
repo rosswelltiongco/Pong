@@ -1,0 +1,5 @@
+verilog work "vga_sync.v"
+verilog work "pong_graphics.v"
+verilog work "pong_top_st.v"
+verilog work "pong_top_tf.v"
+verilog work "C:/Xilinx_ISE_Design_Suite/14.7/ISE_DS/ISE//verilog/src/glbl.v"
