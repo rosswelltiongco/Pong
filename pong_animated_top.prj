@@ -1,0 +1,3 @@
+verilog work "vga_sync.v"
+verilog work "animated_graphics.v"
+verilog work "pong_animated_top.v"

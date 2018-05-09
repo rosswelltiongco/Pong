@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\016091762\Downloads\Pong-master\Pong-master\Pong-master\pong_animated_top.ncd
+OUTFILE=C:\Users\016091762\Downloads\Pong-master\Pong-master\Pong-master\pong_animated_top.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=C:\Users\016091762\Downloads\Pong-master\Pong-master\Pong-master
+LICENSE=ISE
+USER_INFO=174166057_174166058_210551025_903
