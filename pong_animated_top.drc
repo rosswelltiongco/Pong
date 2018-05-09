@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Tue May 08 15:02:35 2018
+Wed May 09 00:59:10 2018
 
 drc -z pong_animated_top.ncd pong_animated_top.pcf
 

@@ -1,10 +1,10 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue May 08 14:59:37 2018
+// Written by: Map P.20131013 on Wed May 09 00:58:22 2018
 //! **************************************************************************
 
 SCHEMATIC START;
-COMP "btn<0>" LOCATE = SITE "P18" LEVEL 1;
-COMP "btn<1>" LOCATE = SITE "M18" LEVEL 1;
+COMP "btn<0>" LOCATE = SITE "M18" LEVEL 1;
+COMP "btn<1>" LOCATE = SITE "P18" LEVEL 1;
 COMP "clk" LOCATE = SITE "E3" LEVEL 1;
 COMP "rgb<0>" LOCATE = SITE "B7" LEVEL 1;
 COMP "rgb<1>" LOCATE = SITE "C7" LEVEL 1;

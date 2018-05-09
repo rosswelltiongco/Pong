@@ -35,8 +35,8 @@ module pong_animated_top(clk, rst, btn, hsync, vsync, rgb);
     //Graphics generation
     animated_graphics gfx
 		  (.clk(clk), .rst(rst), .btn(btn),
-		  .video_on(video_on), .pix_x(pixel_x),
-		   .pix_y(pixel_y), .graph_rgb(rgb_next));
+		   .video_on(video_on), .pixel_x(pixel_x),
+		   .pixel_y(pixel_y), .graph_rgb(rgb_next));
     
     //rgb buffer
     always @ (posedge clk)

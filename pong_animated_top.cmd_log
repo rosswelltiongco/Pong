@@ -20,3 +20,27 @@ map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off pong_animated_top_map.ncd pong_animated_top.ncd pong_animated_top.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pong_animated_top.twx pong_animated_top.ncd -o pong_animated_top.twr pong_animated_top.pcf -ucf {pong nexys4ddr.ucf} 
 bitgen -intstyle ise -f pong_animated_top.ut pong_animated_top.ncd 
+xst -intstyle ise -ifn "C:/Users/016091762/Downloads/Pong-master/Pong-master/pong_animated_top.xst" -ofn "C:/Users/016091762/Downloads/Pong-master/Pong-master/pong_animated_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "pong nexys4ddr.ucf" -p xc7a100t-csg324-3 pong_animated_top.ngc pong_animated_top.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o pong_animated_top_map.ncd pong_animated_top.ngd pong_animated_top.pcf 
+par -w -intstyle ise -ol high -mt off pong_animated_top_map.ncd pong_animated_top.ncd pong_animated_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pong_animated_top.twx pong_animated_top.ncd -o pong_animated_top.twr pong_animated_top.pcf -ucf {pong nexys4ddr.ucf} 
+bitgen -intstyle ise -f pong_animated_top.ut pong_animated_top.ncd 
+xst -intstyle ise -ifn "C:/Users/016091762/Downloads/Pong-master - working/Pong-master/pong_animated_top.xst" -ofn "C:/Users/016091762/Downloads/Pong-master - working/Pong-master/pong_animated_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "pong nexys4ddr.ucf" -p xc7a100t-csg324-3 "pong_animated_top.ngc" pong_animated_top.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o pong_animated_top_map.ncd pong_animated_top.ngd pong_animated_top.pcf 
+par -w -intstyle ise -ol high -mt off pong_animated_top_map.ncd pong_animated_top.ncd pong_animated_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pong_animated_top.twx pong_animated_top.ncd -o pong_animated_top.twr pong_animated_top.pcf -ucf {pong nexys4ddr.ucf} 
+bitgen -intstyle ise -f pong_animated_top.ut pong_animated_top.ncd 
+xst -intstyle ise -ifn "C:/Users/016091762/Downloads/Pong-master - working/Pong-master/pong_animated_top.xst" -ofn "C:/Users/016091762/Downloads/Pong-master - working/Pong-master/pong_animated_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "pong nexys4ddr.ucf" -p xc7a100t-csg324-3 "pong_animated_top.ngc" pong_animated_top.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o pong_animated_top_map.ncd pong_animated_top.ngd pong_animated_top.pcf 
+par -w -intstyle ise -ol high -mt off pong_animated_top_map.ncd pong_animated_top.ncd pong_animated_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pong_animated_top.twx pong_animated_top.ncd -o pong_animated_top.twr pong_animated_top.pcf -ucf {pong nexys4ddr.ucf} 
+bitgen -intstyle ise -f pong_animated_top.ut pong_animated_top.ncd 
+xst -intstyle ise -ifn "C:/Users/016091762/Downloads/Pong-master - working/Pong-master/pong_animated_top.xst" -ofn "C:/Users/016091762/Downloads/Pong-master - working/Pong-master/pong_animated_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc "pong nexys4ddr.ucf" -p xc7a100t-csg324-3 "pong_animated_top.ngc" pong_animated_top.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o pong_animated_top_map.ncd pong_animated_top.ngd pong_animated_top.pcf 
+par -w -intstyle ise -ol high -mt off pong_animated_top_map.ncd pong_animated_top.ncd pong_animated_top.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml pong_animated_top.twx pong_animated_top.ncd -o pong_animated_top.twr pong_animated_top.pcf -ucf {pong nexys4ddr.ucf} 
+bitgen -intstyle ise -f pong_animated_top.ut pong_animated_top.ncd 

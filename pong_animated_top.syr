@@ -3,14 +3,14 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.27 secs
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: pong_animated_top.prj
 
@@ -105,11 +105,11 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "C:\Users\016091762\Downloads\Pong-master\Pong-master\Pong-master\vga_sync.v" into library work
+Analyzing Verilog file "C:\Users\016091762\Downloads\Pong-master - working\Pong-master\vga_sync.v" into library work
 Parsing module <vga_sync>.
-Analyzing Verilog file "C:\Users\016091762\Downloads\Pong-master\Pong-master\Pong-master\animated_graphics.v" into library work
+Analyzing Verilog file "C:\Users\016091762\Downloads\Pong-master - working\Pong-master\animated_graphics.v" into library work
 Parsing module <animated_graphics>.
-Analyzing Verilog file "C:\Users\016091762\Downloads\Pong-master\Pong-master\Pong-master\pong_animated_top.v" into library work
+Analyzing Verilog file "C:\Users\016091762\Downloads\Pong-master - working\Pong-master\pong_animated_top.v" into library work
 Parsing module <pong_animated_top>.
 
 =========================================================================
@@ -121,25 +121,25 @@ Elaborating module <pong_animated_top>.
 Elaborating module <vga_sync>.
 
 Elaborating module <animated_graphics>.
-WARNING:HDLCompiler:413 - "C:\Users\016091762\Downloads\Pong-master\Pong-master\Pong-master\animated_graphics.v" Line 71: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\016091762\Downloads\Pong-master\Pong-master\Pong-master\animated_graphics.v" Line 81: Result of 11-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\016091762\Downloads\Pong-master\Pong-master\Pong-master\animated_graphics.v" Line 83: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\016091762\Downloads\Pong-master\Pong-master\Pong-master\animated_graphics.v" Line 88: Result of 32-bit expression is truncated to fit in 10-bit target.
-WARNING:HDLCompiler:413 - "C:\Users\016091762\Downloads\Pong-master\Pong-master\Pong-master\animated_graphics.v" Line 89: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\016091762\Downloads\Pong-master - working\Pong-master\animated_graphics.v" Line 69: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\016091762\Downloads\Pong-master - working\Pong-master\animated_graphics.v" Line 78: Result of 11-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\016091762\Downloads\Pong-master - working\Pong-master\animated_graphics.v" Line 80: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\016091762\Downloads\Pong-master - working\Pong-master\animated_graphics.v" Line 85: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "C:\Users\016091762\Downloads\Pong-master - working\Pong-master\animated_graphics.v" Line 86: Result of 32-bit expression is truncated to fit in 10-bit target.
 
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <pong_animated_top>.
-    Related source file is "C:\Users\016091762\Downloads\Pong-master\Pong-master\Pong-master\pong_animated_top.v".
+    Related source file is "C:\Users\016091762\Downloads\Pong-master - working\Pong-master\pong_animated_top.v".
     Found 12-bit register for signal <rgb>.
     Summary:
 	inferred  12 D-type flip-flop(s).
 Unit <pong_animated_top> synthesized.
 
 Synthesizing Unit <vga_sync>.
-    Related source file is "C:\Users\016091762\Downloads\Pong-master\Pong-master\Pong-master\vga_sync.v".
+    Related source file is "C:\Users\016091762\Downloads\Pong-master - working\Pong-master\vga_sync.v".
     Found 10-bit register for signal <pixel_y>.
     Found 10-bit register for signal <pixel_x>.
     Found 2-bit register for signal <count>.
@@ -162,43 +162,43 @@ Synthesizing Unit <vga_sync>.
 Unit <vga_sync> synthesized.
 
 Synthesizing Unit <animated_graphics>.
-    Related source file is "C:\Users\016091762\Downloads\Pong-master\Pong-master\Pong-master\animated_graphics.v".
+    Related source file is "C:\Users\016091762\Downloads\Pong-master - working\Pong-master\animated_graphics.v".
     Found 10-bit register for signal <ball_x_reg>.
     Found 10-bit register for signal <ball_y_reg>.
-    Found 10-bit register for signal <bar_y_reg>.
+    Found 10-bit register for signal <paddle_reg>.
     Found 10-bit register for signal <y_delta_reg>.
     Found 10-bit register for signal <x_delta_reg>.
-    Found 3-bit subtractor for signal <rom_addr> created at line 93.
-    Found 3-bit subtractor for signal <rom_col> created at line 94.
-    Found 11-bit adder for signal <n0147> created at line 71.
-    Found 10-bit adder for signal <bar_y_reg[9]_GND_3_o_add_20_OUT> created at line 81.
-    Found 11-bit adder for signal <n0151> created at line 88.
-    Found 11-bit adder for signal <n0153> created at line 89.
-    Found 10-bit adder for signal <ball_x_reg[9]_x_delta_reg[9]_add_40_OUT> created at line 98.
-    Found 10-bit adder for signal <ball_y_reg[9]_y_delta_reg[9]_add_42_OUT> created at line 100.
-    Found 10-bit subtractor for signal <bar_y_b> created at line 24.
-    Found 10-bit subtractor for signal <GND_3_o_GND_3_o_sub_23_OUT<9:0>> created at line 83.
+    Found 3-bit subtractor for signal <rom_addr> created at line 87.
+    Found 3-bit subtractor for signal <rom_col> created at line 88.
+    Found 11-bit adder for signal <n0141> created at line 69.
+    Found 10-bit adder for signal <paddle_reg[9]_GND_3_o_add_18_OUT> created at line 78.
+    Found 11-bit adder for signal <n0145> created at line 85.
+    Found 11-bit adder for signal <n0147> created at line 86.
+    Found 10-bit adder for signal <ball_x_reg[9]_x_delta_reg[9]_add_37_OUT> created at line 93.
+    Found 10-bit adder for signal <ball_y_reg[9]_y_delta_reg[9]_add_39_OUT> created at line 95.
+    Found 10-bit subtractor for signal <paddle_bottom> created at line 24.
+    Found 10-bit subtractor for signal <GND_3_o_GND_3_o_sub_21_OUT<9:0>> created at line 80.
     Found 10-bit subtractor for signal <ball_x_r> created at line 26.
-    Found 10-bit subtractor for signal <ball_y_b> created at line 27.
-    Found 10-bit comparator lessequal for signal <n0007> created at line 68
-    Found 10-bit comparator lessequal for signal <n0009> created at line 68
-    Found 10-bit comparator lessequal for signal <n0016> created at line 72
-    Found 10-bit comparator lessequal for signal <n0018> created at line 72
-    Found 10-bit comparator lessequal for signal <n0021> created at line 73
-    Found 10-bit comparator lessequal for signal <n0024> created at line 73
-    Found 10-bit comparator greater for signal <bar_y_b[9]_GND_3_o_LessThan_20_o> created at line 80
-    Found 10-bit comparator greater for signal <GND_3_o_bar_y_t[9]_LessThan_22_o> created at line 82
-    Found 10-bit comparator lessequal for signal <n0043> created at line 91
-    Found 10-bit comparator lessequal for signal <n0045> created at line 91
-    Found 10-bit comparator lessequal for signal <n0048> created at line 92
-    Found 10-bit comparator lessequal for signal <n0051> created at line 92
-    Found 10-bit comparator greater for signal <ball_y_t[9]_GND_3_o_LessThan_45_o> created at line 107
-    Found 10-bit comparator greater for signal <GND_3_o_ball_y_b[9]_LessThan_46_o> created at line 109
-    Found 10-bit comparator greater for signal <n0065> created at line 111
-    Found 10-bit comparator lessequal for signal <n0067> created at line 113
-    Found 10-bit comparator lessequal for signal <n0069> created at line 113
-    Found 10-bit comparator lessequal for signal <n0072> created at line 114
-    Found 10-bit comparator lessequal for signal <n0075> created at line 114
+    Found 10-bit subtractor for signal <ball_bottom> created at line 27.
+    Found 10-bit comparator lessequal for signal <n0007> created at line 67
+    Found 10-bit comparator lessequal for signal <n0009> created at line 67
+    Found 10-bit comparator lessequal for signal <n0015> created at line 70
+    Found 10-bit comparator lessequal for signal <n0017> created at line 70
+    Found 10-bit comparator lessequal for signal <n0020> created at line 71
+    Found 10-bit comparator lessequal for signal <n0023> created at line 71
+    Found 10-bit comparator greater for signal <paddle_bottom[9]_GND_3_o_LessThan_18_o> created at line 77
+    Found 10-bit comparator greater for signal <GND_3_o_paddle_top[9]_LessThan_20_o> created at line 79
+    Found 10-bit comparator lessequal for signal <n0044> created at line 90
+    Found 10-bit comparator lessequal for signal <n0046> created at line 90
+    Found 10-bit comparator lessequal for signal <n0049> created at line 91
+    Found 10-bit comparator lessequal for signal <n0052> created at line 91
+    Found 10-bit comparator greater for signal <ball_top[9]_GND_3_o_LessThan_42_o> created at line 102
+    Found 10-bit comparator greater for signal <GND_3_o_ball_bottom[9]_LessThan_43_o> created at line 103
+    Found 10-bit comparator greater for signal <n0062> created at line 104
+    Found 10-bit comparator lessequal for signal <n0064> created at line 105
+    Found 10-bit comparator lessequal for signal <n0066> created at line 105
+    Found 10-bit comparator lessequal for signal <n0069> created at line 106
+    Found 10-bit comparator lessequal for signal <n0072> created at line 106
     Summary:
 	inferred  11 Adder/Subtractor(s).
 	inferred  50 D-type flip-flop(s).
@@ -237,15 +237,17 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-INFO:Xst:2261 - The FF/Latch <x_delta_reg_3> in Unit <gfx> is equivalent to the following 6 FFs/Latches, which will be removed : <x_delta_reg_4> <x_delta_reg_5> <x_delta_reg_6> <x_delta_reg_7> <x_delta_reg_8> <x_delta_reg_9> 
-INFO:Xst:2261 - The FF/Latch <y_delta_reg_3> in Unit <gfx> is equivalent to the following 6 FFs/Latches, which will be removed : <y_delta_reg_4> <y_delta_reg_5> <y_delta_reg_6> <y_delta_reg_7> <y_delta_reg_8> <y_delta_reg_9> 
+INFO:Xst:2261 - The FF/Latch <y_delta_reg_2> in Unit <gfx> is equivalent to the following 7 FFs/Latches, which will be removed : <y_delta_reg_3> <y_delta_reg_4> <y_delta_reg_5> <y_delta_reg_6> <y_delta_reg_7> <y_delta_reg_8> <y_delta_reg_9> 
+INFO:Xst:2261 - The FF/Latch <x_delta_reg_2> in Unit <gfx> is equivalent to the following 7 FFs/Latches, which will be removed : <x_delta_reg_3> <x_delta_reg_4> <x_delta_reg_5> <x_delta_reg_6> <x_delta_reg_7> <x_delta_reg_8> <x_delta_reg_9> 
 WARNING:Xst:1710 - FF/Latch <y_delta_reg_0> (without init value) has a constant value of 0 in block <gfx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <y_delta_reg_1> (without init value) has a constant value of 1 in block <gfx>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <x_delta_reg_0> (without init value) has a constant value of 0 in block <gfx>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <x_delta_reg_1> (without init value) has a constant value of 1 in block <gfx>. This FF/Latch will be trimmed during the optimization process.
 
 Synthesizing (advanced) Unit <animated_graphics>.
 The following registers are absorbed into accumulator <ball_x_reg>: 1 register on signal <ball_x_reg>.
 The following registers are absorbed into accumulator <ball_y_reg>: 1 register on signal <ball_y_reg>.
-The following registers are absorbed into accumulator <bar_y_reg>: 1 register on signal <bar_y_reg>.
+The following registers are absorbed into accumulator <paddle_reg>: 1 register on signal <paddle_reg>.
 Unit <animated_graphics> synthesized (advanced).
 
 Synthesizing (advanced) Unit <vga_sync>.
@@ -283,26 +285,23 @@ Macro Statistics
 *                         Low Level Synthesis                           *
 =========================================================================
 WARNING:Xst:1710 - FF/Latch <y_delta_reg_0> (without init value) has a constant value of 0 in block <animated_graphics>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_delta_reg_1> (without init value) has a constant value of 1 in block <animated_graphics>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <x_delta_reg_0> (without init value) has a constant value of 0 in block <animated_graphics>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <x_delta_reg_3> in Unit <animated_graphics> is equivalent to the following 6 FFs/Latches, which will be removed : <x_delta_reg_4> <x_delta_reg_5> <x_delta_reg_6> <x_delta_reg_7> <x_delta_reg_8> <x_delta_reg_9> 
-INFO:Xst:2261 - The FF/Latch <y_delta_reg_3> in Unit <animated_graphics> is equivalent to the following 6 FFs/Latches, which will be removed : <y_delta_reg_4> <y_delta_reg_5> <y_delta_reg_6> <y_delta_reg_7> <y_delta_reg_8> <y_delta_reg_9> 
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <x_delta_reg_1> (without init value) has a constant value of 1 in block <animated_graphics>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <y_delta_reg_2> in Unit <animated_graphics> is equivalent to the following 7 FFs/Latches, which will be removed : <y_delta_reg_3> <y_delta_reg_4> <y_delta_reg_5> <y_delta_reg_6> <y_delta_reg_7> <y_delta_reg_8> <y_delta_reg_9> 
+INFO:Xst:2261 - The FF/Latch <x_delta_reg_2> in Unit <animated_graphics> is equivalent to the following 7 FFs/Latches, which will be removed : <x_delta_reg_3> <x_delta_reg_4> <x_delta_reg_5> <x_delta_reg_6> <x_delta_reg_7> <x_delta_reg_8> <x_delta_reg_9> 
 WARNING:Xst:1710 - FF/Latch <ball_x_reg_0> (without init value) has a constant value of 0 in block <animated_graphics>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <ball_y_reg_0> (without init value) has a constant value of 0 in block <animated_graphics>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <pong_animated_top> ...
 
 Optimizing unit <animated_graphics> ...
-WARNING:Xst:1710 - FF/Latch <bar_y_reg_0> (without init value) has a constant value of 0 in block <animated_graphics>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <bar_y_reg_1> (without init value) has a constant value of 0 in block <animated_graphics>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <vga_sync> ...
-WARNING:Xst:1710 - FF/Latch <gfx/bar_y_reg_9> (without init value) has a constant value of 0 in block <pong_animated_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gfx/bar_y_reg_1> (without init value) has a constant value of 0 in block <pong_animated_top>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <gfx/bar_y_reg_0> (without init value) has a constant value of 0 in block <pong_animated_top>. This FF/Latch will be trimmed during the optimization process.
-INFO:Xst:2261 - The FF/Latch <rgb_reg_0> in Unit <pong_animated_top> is equivalent to the following 2 FFs/Latches, which will be removed : <rgb_reg_1> <rgb_reg_2> 
-INFO:Xst:2261 - The FF/Latch <rgb_reg_4> in Unit <pong_animated_top> is equivalent to the following FF/Latch, which will be removed : <rgb_reg_7> 
-INFO:Xst:2261 - The FF/Latch <rgb_reg_5> in Unit <pong_animated_top> is equivalent to the following FF/Latch, which will be removed : <rgb_reg_6> 
-INFO:Xst:2261 - The FF/Latch <rgb_reg_8> in Unit <pong_animated_top> is equivalent to the following 2 FFs/Latches, which will be removed : <rgb_reg_9> <rgb_reg_10> 
+WARNING:Xst:1710 - FF/Latch <gfx/paddle_reg_9> (without init value) has a constant value of 0 in block <pong_animated_top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <gfx/ball_x_reg_1> in Unit <pong_animated_top> is equivalent to the following FF/Latch, which will be removed : <gfx/ball_y_reg_1> 
+INFO:Xst:2261 - The FF/Latch <rgb_reg_2> in Unit <pong_animated_top> is equivalent to the following 2 FFs/Latches, which will be removed : <rgb_reg_6> <rgb_reg_7> 
+INFO:Xst:2261 - The FF/Latch <rgb_reg_4> in Unit <pong_animated_top> is equivalent to the following 5 FFs/Latches, which will be removed : <rgb_reg_5> <rgb_reg_8> <rgb_reg_9> <rgb_reg_10> <rgb_reg_11> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -314,8 +313,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 61
- Flip-Flops                                            : 61
+# Registers                                            : 57
+ Flip-Flops                                            : 57
 
 =========================================================================
 
@@ -338,23 +337,23 @@ Top Level Output File Name         : pong_animated_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 333
+# BELS                             : 352
 #      GND                         : 1
 #      INV                         : 6
-#      LUT2                        : 32
-#      LUT3                        : 33
-#      LUT4                        : 87
-#      LUT5                        : 17
-#      LUT6                        : 44
-#      MUXCY                       : 73
-#      MUXF7                       : 1
+#      LUT1                        : 1
+#      LUT2                        : 24
+#      LUT3                        : 26
+#      LUT4                        : 96
+#      LUT5                        : 19
+#      LUT6                        : 58
+#      MUXCY                       : 80
+#      MUXF7                       : 3
 #      VCC                         : 1
-#      XORCY                       : 38
-# FlipFlops/Latches                : 61
+#      XORCY                       : 37
+# FlipFlops/Latches                : 57
 #      FDC                         : 4
-#      FDCE                        : 49
-#      FDE                         : 6
-#      FDPE                        : 2
+#      FDCE                        : 48
+#      FDE                         : 5
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
 # IO Buffers                       : 17
@@ -368,15 +367,15 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              61  out of  126800     0%  
- Number of Slice LUTs:                  219  out of  63400     0%  
-    Number used as Logic:               219  out of  63400     0%  
+ Number of Slice Registers:              57  out of  126800     0%  
+ Number of Slice LUTs:                  230  out of  63400     0%  
+    Number used as Logic:               230  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    223
-   Number with an unused Flip Flop:     162  out of    223    72%  
-   Number with an unused LUT:             4  out of    223     1%  
-   Number of fully used LUT-FF pairs:    57  out of    223    25%  
+ Number of LUT Flip Flop pairs used:    234
+   Number with an unused Flip Flop:     177  out of    234    75%  
+   Number with an unused LUT:             4  out of    234     1%  
+   Number of fully used LUT-FF pairs:    53  out of    234    22%  
    Number of unique control sets:         8
 
 IO Utilization: 
@@ -407,7 +406,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 61    |
+clk                                | BUFGP                  | 57    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -418,8 +417,8 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 3.366ns (Maximum Frequency: 297.071MHz)
-   Minimum input arrival time before clock: 1.710ns
+   Minimum period: 3.862ns (Maximum Frequency: 258.960MHz)
+   Minimum input arrival time before clock: 2.655ns
    Maximum output required time after clock: 1.033ns
    Maximum combinational path delay: No path found
 
@@ -429,52 +428,55 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 3.366ns (frequency: 297.071MHz)
-  Total number of paths / destination ports: 4988 / 117
+  Clock period: 3.862ns (frequency: 258.960MHz)
+  Total number of paths / destination ports: 5477 / 110
 -------------------------------------------------------------------------
-Delay:               3.366ns (Levels of Logic = 6)
-  Source:            gfx/bar_y_reg_3 (FF)
-  Destination:       rgb_reg_8 (FF)
+Delay:               3.862ns (Levels of Logic = 7)
+  Source:            gfx/ball_y_reg_5 (FF)
+  Destination:       rgb_reg_3 (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: gfx/bar_y_reg_3 to rgb_reg_8
+  Data Path: gfx/ball_y_reg_5 to rgb_reg_3
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q            16   0.361   0.625  gfx/bar_y_reg_3 (gfx/bar_y_reg_3)
-     LUT4:I0->O            2   0.097   0.299  gfx/Msub_bar_y_b_xor<0>1011 (gfx/Msub_bar_y_b_xor<0>101)
-     LUT4:I3->O            4   0.097   0.570  gfx/Msub_bar_y_b_xor<0>101 (gfx/bar_y_b<9>)
-     LUT4:I0->O            0   0.097   0.000  gfx/Mcompar_pix_y[9]_bar_y_b[9]_LessThan_18_o_lutdi4 (gfx/Mcompar_pix_y[9]_bar_y_b[9]_LessThan_18_o_lutdi4)
-     MUXCY:DI->O           4   0.337   0.000  gfx/Mcompar_pix_y[9]_bar_y_b[9]_LessThan_18_o_cy<4> (gfx/pix_y[9]_bar_y_b[9]_LessThan_18_o)
-     MUXCY:CI->O           2   0.262   0.515  gfx/graph_rgb<6>1_cy (rgb_next<4>)
-     LUT6:I3->O            1   0.097   0.000  gfx/graph_rgb<9>2_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy_cy (rgb_next<10>)
-     FDE:D                     0.008          rgb_reg_8
+     FDCE:C->Q            15   0.361   0.748  gfx/ball_y_reg_5 (gfx/ball_y_reg_5)
+     LUT5:I0->O            2   0.097   0.299  gfx/Msub_ball_bottom_xor<0>711 (gfx/Msub_ball_bottom_xor<0>71)
+     LUT6:I5->O            4   0.097   0.570  gfx/Msub_ball_bottom_xor<0>10 (gfx/ball_bottom<9>)
+     LUT4:I0->O            0   0.097   0.000  gfx/Mcompar_pixel_y[9]_ball_bottom[9]_LessThan_37_o_lutdi4 (gfx/Mcompar_pixel_y[9]_ball_bottom[9]_LessThan_37_o_lutdi4)
+     MUXCY:DI->O           3   0.567   0.305  gfx/Mcompar_pixel_y[9]_ball_bottom[9]_LessThan_37_o_cy<4> (gfx/pixel_y[9]_ball_bottom[9]_LessThan_37_o)
+     LUT1:I0->O            1   0.097   0.000  gfx/Mmux_graph_rgb61_cy_rt (gfx/Mmux_graph_rgb61_cy_rt)
+     MUXCY:S->O            1   0.353   0.000  gfx/Mmux_graph_rgb61_cy (N32_l1)
+     MUXCY:CI->O           1   0.262   0.000  gfx/Mmux_graph_rgb61_cy1 (rgb_next<3>)
+     FDE:D                     0.008          rgb_reg_3
     ----------------------------------------
-    Total                      3.366ns (1.356ns logic, 2.010ns route)
-                                       (40.3% logic, 59.7% route)
+    Total                      3.862ns (1.939ns logic, 1.923ns route)
+                                       (50.2% logic, 49.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 82 / 68
+  Total number of paths / destination ports: 115 / 69
 -------------------------------------------------------------------------
-Offset:              1.710ns (Levels of Logic = 4)
+Offset:              2.655ns (Levels of Logic = 6)
   Source:            btn<1> (PAD)
-  Destination:       gfx/bar_y_reg_8 (FF)
+  Destination:       gfx/paddle_reg_8 (FF)
   Destination Clock: clk rising
 
-  Data Path: btn<1> to gfx/bar_y_reg_8
+  Data Path: btn<1> to gfx/paddle_reg_8
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             8   0.001   0.725  btn_1_IBUF (btn_1_IBUF)
-     LUT6:I0->O            3   0.097   0.389  gfx/Maccum_bar_y_reg_xor<6>111 (gfx/Maccum_bar_y_reg_xor<6>111)
-     LUT5:I3->O            1   0.097   0.295  gfx/Maccum_bar_y_reg_xor<8>11_SW1 (N46)
-     LUT5:I4->O            1   0.097   0.000  gfx/Maccum_bar_y_reg_xor<8>11 (gfx/Result<8>2)
-     FDCE:D                    0.008          gfx/bar_y_reg_8
+     IBUF:I->O             9   0.001   0.730  btn_1_IBUF (btn_1_IBUF)
+     LUT6:I0->O            3   0.097   0.521  gfx/Maccum_paddle_reg_lut<0>1 (gfx/Maccum_paddle_reg_lut<0>)
+     LUT6:I3->O            4   0.097   0.309  gfx/Maccum_paddle_reg_xor<6>111_SW0 (gfx/Maccum_paddle_reg_xor<4>11)
+     LUT5:I4->O            3   0.097   0.305  gfx/Maccum_paddle_reg_xor<6>111 (gfx/Maccum_paddle_reg_xor<6>111)
+     LUT5:I4->O            1   0.097   0.295  gfx/Maccum_paddle_reg_xor<8>11_SW0 (N56)
+     LUT5:I4->O            1   0.097   0.000  gfx/Maccum_paddle_reg_xor<8>11 (gfx/Result<8>2)
+     FDCE:D                    0.008          gfx/paddle_reg_8
     ----------------------------------------
-    Total                      1.710ns (0.300ns logic, 1.410ns route)
-                                       (17.5% logic, 82.5% route)
+    Total                      2.655ns (0.494ns logic, 2.161ns route)
+                                       (18.6% logic, 81.4% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -506,20 +508,20 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    3.366|         |         |         |
+clk            |    3.862|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 30.00 secs
-Total CPU time to Xst completion: 30.48 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.14 secs
  
 --> 
 
-Total memory usage is 581060 kilobytes
+Total memory usage is 414352 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :   16 (   0 filtered)
-Number of infos    :    8 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
 
